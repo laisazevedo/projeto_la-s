@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ifpi.projeto_Laís">
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="ifpi.projeto_Laís.DetalheAnuncioActivity" android:label="Detalhes do Anúncio" android:parentActivityName="ifpi.projeto_Laís.ListagemAnunciosActivity"></activity>
+        <activity
+            android:name="ifpi.projeto_Laís.ListagemAnunciosActivity"
+            android:label="Anúncios...">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ifpi.projeto_Laís.ListaComidasActivity" />
+        <activity
+            android:name="ifpi.projeto_Laís.ListaCelularActivity"
+            android:label="Lista de Celulares" />
+        <activity android:name="ifpi.projeto_Laís.RadioAndCheckActivity" />
+        <activity
+            android:name="ifpi.projeto_Laís.CicloVida2Activity"
+            android:parentActivityName="ifpi.projeto_Laís.CicloVida1Activity" />
+        <activity android:name="ifpi.projeto_Laís.CicloVida1Activity" />
+        <activity android:name="ifpi.projeto_Laís.ImplicitIntentSetAlarmActivity" />
+        <activity android:name="ifpi.projeto_Laís.Tela2IntentResultActivity" />
+        <activity android:name="ifpi.projeto_Laís.Tela1IntentResultActivity" />
+        <activity android:name="ifpi.projeto_Laís.ImplicitIntentActivity" />
+        <activity
+            android:name="ifpi.projeto_Laís.NotasSituacaoIntentActivity"
+            android:parentActivityName="ifpi.projeto_Laís.NotasIntentActivity" />
+        <activity android:name="ifpi.projeto_Laís.NotasIntentActivity" />
+        <activity android:name="ifpi.projeto_Laís.LinearLayoutActivity" />
+        <activity android:name="ifpi.projeto_Laís.IMCActivity" />
+        <activity android:name="ifpi.projeto_Laís.ContadorActivity" />
+        <activity android:name="ifpi.projeto_Laís.MainActivity" />
+        <activity android:name="ifpi.projeto_Laís.Tela2Activity" />
+    </application>
+
+</manifest>
